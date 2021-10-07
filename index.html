@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sites profissionais responsivos, loja virtual, UX Design - Agência Colors</title>
+    <meta name="description" content="Criação profissional de sites responsivos, lojas virtuais, interface, aplicativos e muito mais. Somos a Agência Colors.">
+    <meta name="keywords" content="site, site responsivo, criação de site, ux design, loja virtual">
+    
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div><p><a href="index.html" title="página inicial"></a> <img class='logo' src="img/logo.png" alt=""></p></div>
+
+        <nav>
+            <h2 class="icon"> &equiv;</h2>
+            <ul class="menu">
+                <li><a href="#produto" title="Produtos da Agência Colors">Produto</a></li>
+                <li><a href="#ux" title="Criação de interfaces com foco em UX">UX Design</a></li>
+                <li><a href="#motion" title="motion design">Motion</a></li>
+                <li><a href="#brand" title="Brand">Brand</a></li>
+                <li><a href="#print" title="Print">Print</a></li>
+            </ul>
+        </nav>
+
+        <div class="botao">
+            <p><a target="_blank" href="https://wa.me/5511986127185"><img class="what" src="img/whatsapp.png" alt="Logo do whatsapp"></a></p>
+        </div>
+
+    </header>
+
+    <section id="produto">
+
+        <!-- Usando uma div para proteger conteudo, section é flex, mas a div não! -->
+
+        <div class="conteudo">
+            <h1>PRODUTO</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            <p><a href="#" title="" class="btn-15 custom-btn bt-verde-agua">SAIBA MAIS</a></p>
+        </div>
+    </section>
+
+
+
+    <section id="ux">
+        <div class="conteudo">
+            <h1>UX DESIGN</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            <p><a href="#" title="" class="btn-15 custom-btn">SAIBA MAIS</a></p>
+        </div>
+    </section>
+
+
+    <section id="motion">
+        <div class="conteudo">
+            <h1>MOTION</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            <p><a href="#" title="" class=" custom-btn btn-15 bt-verde-agua">SAIBA MAIS</a></p>
+        </div>
+    </section>
+
+
+    <section id="brand">
+        <div class="conteudo">
+            <h1>BRAND</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            <p><a href="#" title="" class="btn-15 custom-btn">SAIBA MAIS</a></p>
+        </div>
+    </section>
+
+
+
+    <section id="print">
+        <div class="conteudo">
+            <h1>PRINT</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            <p><a href="#" title="" class="btn-15 custom-btn">SAIBA MAIS</a></p>
+        </div>
+    </section>
+    
+   
+    <!-- Barra de acessibilidade -->
+
+    <div id="acessibilidade">
+        <button onclick="tamTexto(-4)"> - </button>
+        <button onclick="tamTexto(18)"> &#x21bb; </button>
+        <button onclick="tamTexto(+4)"> + </button>
+    </div>
+
+    <script>
+        let fonte = 18
+        // definindo a função que muda o tamanho
+
+        function tamTexto (contador) {
+            if (contador == 18){
+                fonte = contador
+            } else {
+                fonte += contador
+            }
+        
+            //definindo o tamanho da fonte do conteudo
+            document.querySelector("body").style.fontSize = fonte + "px"
+        }
+
+       //definindo a função que muda o tamanho do texto
+
+       if (fonte => 80 ) {
+            fonte = 80
+       } else if (fonte < 8) {
+            fonte = 8;
+       }
+        
+    </script>
+
+
+    <script src="menu.js"></script>
+</body>
+</html>

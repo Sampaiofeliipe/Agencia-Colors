@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sites profissionais responsivos, loja virtual, UX Design - Agência Colors</title>
+    <meta name="description" content="Somos a Agência Colors, informe sua idade.">
+    <meta name="keywords" content="site, site responsivo">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="centraliza">
+        <h2>Verificação de Idade</h2>
+        <p>Informe o ano do seu nascimento para verificarmos se nosso conteúdo é apropriado.</p>
+    </section>
+
+    <script>
+        // o basico (mal) feito
+
+        /* let nasc = prompt ('Digite o ano do seu nascimento com 4 digitos')
+        let anoAtual = new Date().getFullYear
+        let idade = anoAtual - nasc
+
+        if (idade < 18){
+            document.write ("Você ainda não tem idade para acessar   agência Felps")} 
+        else {
+            window.location = "index.html"
+        }
+ */
+
+ 
+        let nasc = prompt ('Digite o ano do seu nascimento com 4 digitos')
+        let anoAtual = new Date().getFullYear
+        let idade = anoAtual - nasc
+
+        if (idade < 18){
+            document.write ("Você ainda não tem idade para acessar   agência Felps")} 
+        else {
+            document.write ("Que bom que você. veio você será redirecionado para o nosso site")
+            
+
+            setTimeout( function () {
+                window.location = "index.html"
+            }, 3000);
+        }
+
+    </script>
+</body>
+</html>

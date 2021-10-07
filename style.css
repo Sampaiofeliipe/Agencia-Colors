@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald&display=swap');
+
+/*
+
+Texto corrido: font-family: 'Merriweather', serif;
+
+Título: font-family: 'Oswald', sans-serif;
+
+*/
+
+/* Ajuste do Box Model pra TUDO */
+
+*, *::after, *::before { box-sizing: border-box; }
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+
+}
+
+
+body {
+    background: rgb(255, 239, 60);
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.icone {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu {
+    background-color: rgb(255, 239, 60);
+    text-align:  center;
+    padding: 0.5rem;
+    margin-top: -1rem;
+    display: none;
+}
+
+.menu-aberto {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin:20px;
+}
+
+.icon {
+    display: flex;
+    font-size: 2.5rem;
+    
+}
+
+section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+/* Limitando o conteudo da section. */
+    .conteudo {
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    section  h1{
+        font-family: 'Oswald', sans-serif;
+        font-size: 3rem;
+        margin-bottom: 1.9rem;
+    }
+    
+    section p { line-height: 1.9rem}  /* cConfigura o espaço entre as linhas */
+
+
+
+    .btn-15::before { 
+        content:"+";
+        margin-right: .8rem;
+        font-weight: 600;
+    }
+
+    #produto {
+        background-image: url(img/1.png);
+        background-size: cover;
+        background-position-x: center;  
+    }
+
+    #ux {
+        color:#fff;
+        background-image: url(img/2.png);
+    }
+
+    #motion {
+        background-image: url(img/3.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    
+    
+    #brand {
+        color: #fff;
+        background-image: url(img/4.png);
+    }
+
+    #print {
+        background-image: url(img/5.png);
+        background-size: cover;
+        background-position-x: center;
+        color: #fff;;
+    }
+
+
+/* Formatando para  */
+
+@media screen and (min-width:800px) {
+    body {
+        background-color: rgb(255, 239, 60);
+    }
+    
+    .conteudo {
+        width: 50%;
+        max-width: 800px;
+        margin-left: 4rem;
+    }
+
+
+    .icone {
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+
+    section h1{
+        font-size: 5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #produto, #motion, #print {
+        background-attachment: fixed;
+    }
+
+    nav li { 
+        display: inline;
+    }
+    
+    .menu {
+        display: inline;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin:20px;
+    }
+    
+    .icon {display: none;}
+}
+
+.what {
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    width: 40px;
+   
+}
+
+.btn-15 {
+   z-index: 1;
+ }
+ .btn-15:after {
+   position: absolute;
+   content: "";
+   width: 0;
+   height: 100%;
+   top: 0;
+   right: 0;
+   z-index: -1;
+    background: #000000;
+   transition: all 0.3s ease;
+ }
+ .btn-15:hover {
+   color: #fff;
+ }
+ .btn-15:hover:after {
+   left: 0;
+   width: 100%;
+ }
+ .btn-15:active {
+   top: 2px;
+ }
+
+.btn-15 {
+    color: black;
+    background-color: rgb(255, 239, 60);
+}
+.bt-verde-agua {
+    background-color: #26ccca;
+    color:white;
+}
+
+
+
+.custom-btn{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px; /* Configura espaço entre as letras */
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    
+
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+#acessibilidade {
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    bottom:300px;
+    left: 20px;
+    right: 10px;
+    z-index: 1;
+}
+
+#acessibilidade button {
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    color: #fff;
+    background: rgb(98, 0, 255);
+    width: 60px;
+    height: 40px;
+    font-size:20px;
+
+}
+
